@@ -1,0 +1,156 @@
+<main>
+    <h1 class="title-main"><span>&lt;</span>Bienvenido DevGenie Shop<span>></span></h1>
+    <div class="carousel-container">
+        <h2>Productos Destacados</h2>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/img/computadoras/monitor 4k8.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/ropa/remera1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/ropa/gorra7.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+        </div>
+
+    </div>
+</main>
+
+<section id="productos">
+    <h2>Nuestros Productos</h2>
+    <div class="productos-container">
+        <div class="card" style="width: 18rem;">
+            <div class="img-container">
+                <img src="./assets/img/computadoras/monitor 4k8.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Monitor 4k</h5>
+                <p class="card-text">la Mejor calidad de imagen garatizada</p>
+                <span>$ 25000</span>
+                <button class="btn btn-primary" (click)="addToCart(productosComputadoras[0])">Agregar</button>
+                
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="img-container">
+                <img src="./assets/img/ropa/remera1.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Remera git</h5>
+                <p class="card-text">la Mejor calidad  garatizada 100% algodon</p>
+                <span>$ 20000</span>
+                <button class="btn btn-primary" (click)="addToCart(productosRopa[0])">Agregar</button>
+                
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="img-container">
+                <img src="./assets/img/ropa/remera4.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Remera Nodejs</h5>
+                <p class="card-text">la Mejor calidad  garatizada 100% algodon</p>
+                <span>$ 20000</span>
+                <button class="btn btn-primary" (click)="addToCart(productosRopa[3])">Agregar</button>
+                
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="img-container">
+                <img src="./assets/img/ropa/gorra7.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Gorra fullStack</h5>
+                <p class="card-text">la Mejor calidad  garatizada 100% algodon</p>
+                <span>$ 13000</span>
+                <button class="btn btn-primary" (click)="addToCart(productosRopa[5])">Agregar</button>
+                
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="img-container">
+                <img src="./assets/img/computadoras/monito 8k9.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Monitor 8K</h5>
+                <p class="card-text">la Mejor calidad de imagen  garatizada</p>
+                <span>$ 35000</span>
+                <button class="btn btn-primary" (click)="addToCart(productosComputadoras[1])">Agregar</button>
+                
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="img-container">
+                <img src="./assets/img/ropa/remera3.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Remera Angular</h5>
+                <p class="card-text">la Mejor calidad  garatizada 100% algodon</p>
+                <span>$ 20000</span>
+                <button class="btn btn-primary" (click)="addToCart(productosRopa[2])">Agregar</button>
+                
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="img-container">
+                <img src="./assets/img/accesorios/mousepad11.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">MousePad</h5>
+                <p class="card-text">Textura y comodidad</p>
+                <span>$ 11000</span>
+                <button class="btn btn-primary" (click)="addToCart(productosAccesorios[3])">Agregar</button>
+                
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="img-container">
+                <img src="./assets/img/accesorios/teclado_gamer.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Teclado gamer ZX24 PRO</h5>
+                <p class="card-text">Personalizable y elegante</p>
+                <span>$ 25000</span>
+                <button class="btn btn-primary" (click)="addToCart(productosAccesorios[4])">Agregar</button>
+                
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="img-container">
+                <img src="./assets/img/accesorios/teclado_mecanico10.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Teclado mecanico rx109</h5>
+                <p class="card-text">la Mejor calidad garatizada</p>
+                <span>$ 35000</span>
+                <button class="btn btn-primary" (click)="addToCart(productosAccesorios[5])">Agregar</button>
+                
+            </div>
+        </div>
+
+  
+
+        
+        
+    </div>
+
+</section>
+
+
+
+        
+
+
+

@@ -1,1 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+html,body{
+    background: linear-gradient(to right, #141e30, #243b55); 
+    
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; // Esto evita el desbordamiento horizontal
+    
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4caf50;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  }
+  
+  .notification.fade-out {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+
+
+
+
